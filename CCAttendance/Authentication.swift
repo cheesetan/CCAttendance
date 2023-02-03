@@ -233,6 +233,15 @@ struct RegisterView: View {
                             return
                         }
                         
+                        let user = Auth.auth().currentUser
+                        
+                        Firestore.firestore().collection("users").document(user!.uid).setData([
+                            "email": user!.email as Any,
+                            "email-verified": user!.isEmailVerified,
+                            "password": password,
+                            "UID": user!.uid
+                        ])
+                        
                         Auth.auth().currentUser?.sendEmailVerification { error in
                             // ...
                         }
@@ -426,6 +435,18 @@ struct LogInView: View {
                     }
                     
                     if Auth.auth().currentUser?.isEmailVerified == true {
+                        
+                        let user = Auth.auth().currentUser
+                        Firestore.firestore().collection("users").document(user!.uid).updateData([
+                            "email-verified": true,
+                        ]) { err in
+                            if let err = err {
+                                print("Error updating document: \(err)")
+                            } else {
+                                print("Document successfully updated")
+                            }
+                        }
+                        
                         userEmail = (Auth.auth().currentUser?.email!)!
                         userPassword = password
                         isLoggedIn = true
@@ -433,6 +454,17 @@ struct LogInView: View {
                         
                         generator2.notificationOccurred(.success)
                     } else {
+                        let user = Auth.auth().currentUser
+                        Firestore.firestore().collection("users").document(user!.uid).updateData([
+                            "email-verified": false,
+                        ]) { err in
+                            if let err = err {
+                                print("Error updating document: \(err)")
+                            } else {
+                                print("Document successfully updated")
+                            }
+                        }
+                        
                         generator2.notificationOccurred(.error)
                         
                         Auth.auth().currentUser?.sendEmailVerification { error in

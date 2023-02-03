@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A107ADB298CFB8A00056C16 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A107ADA298CFB8A00056C16 /* ScrollingStackModifier.swift */; };
+		6A107ADD298D0EA300056C16 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A107ADC298D0EA300056C16 /* QRScannerView.swift */; };
+		6A107AE0298D100000056C16 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 6A107ADF298D100000056C16 /* CodeScanner */; };
 		6A2967B529816C19005F25F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A2967B429816C19005F25F6 /* GoogleService-Info.plist */; };
 		6A2967B829816CCB005F25F6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2967B729816CCB005F25F6 /* FirebaseAuth */; };
 		6A2967BA29816CCB005F25F6 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6A2967B929816CCB005F25F6 /* FirebaseAuthCombine-Community */; };
@@ -27,9 +30,12 @@
 		6A7D7B3729814C6200DC8307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7D7B3629814C6200DC8307 /* Assets.xcassets */; };
 		6A7D7B3A29814C6200DC8307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7D7B3929814C6200DC8307 /* Preview Assets.xcassets */; };
 		6A9B794F2986BDC9002F76F3 /* CCAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B794E2986BDC9002F76F3 /* CCAView.swift */; };
+		6AA694382988869300A661A7 /* CCACard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA694372988869300A661A7 /* CCACard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A107ADA298CFB8A00056C16 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
+		6A107ADC298D0EA300056C16 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		6A2967B429816C19005F25F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A2967D129816CE3005F25F6 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		6A7D7B2F29814C6100DC8307 /* CCAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +44,7 @@
 		6A7D7B3629814C6200DC8307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7D7B3929814C6200DC8307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A9B794E2986BDC9002F76F3 /* CCAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCAView.swift; sourceTree = "<group>"; };
+		6AA694372988869300A661A7 /* CCACard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCACard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 				6A2967C229816CCB005F25F6 /* FirebaseFirestore in Frameworks */,
 				6A2967C429816CCB005F25F6 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				6A2967C629816CCB005F25F6 /* FirebaseFirestoreSwift in Frameworks */,
+				6A107AE0298D100000056C16 /* CodeScanner in Frameworks */,
 				6A2967CA29816CCB005F25F6 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +94,8 @@
 				6A7D7B3229814C6100DC8307 /* CCAttendanceApp.swift */,
 				6A7D7B3429814C6100DC8307 /* ContentView.swift */,
 				6A2967D129816CE3005F25F6 /* Authentication.swift */,
-				6A9B794E2986BDC9002F76F3 /* CCAView.swift */,
+				6A107ADA298CFB8A00056C16 /* ScrollingStackModifier.swift */,
+				6AA694392988869E00A661A7 /* CCAView */,
 				6A2967B429816C19005F25F6 /* GoogleService-Info.plist */,
 				6A7D7B3629814C6200DC8307 /* Assets.xcassets */,
 				6A7D7B3829814C6200DC8307 /* Preview Content */,
@@ -100,6 +109,16 @@
 				6A7D7B3929814C6200DC8307 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6AA694392988869E00A661A7 /* CCAView */ = {
+			isa = PBXGroup;
+			children = (
+				6A9B794E2986BDC9002F76F3 /* CCAView.swift */,
+				6AA694372988869300A661A7 /* CCACard.swift */,
+				6A107ADC298D0EA300056C16 /* QRScannerView.swift */,
+			);
+			path = CCAView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +151,7 @@
 				6A2967CB29816CCB005F25F6 /* FirebaseRemoteConfigSwift */,
 				6A2967CD29816CCB005F25F6 /* FirebaseStorage */,
 				6A2967CF29816CCB005F25F6 /* FirebaseStorageCombine-Community */,
+				6A107ADF298D100000056C16 /* CodeScanner */,
 			);
 			productName = CCAttendance;
 			productReference = 6A7D7B2F29814C6100DC8307 /* CCAttendance.app */;
@@ -163,6 +183,7 @@
 			mainGroup = 6A7D7B2629814C6100DC8307;
 			packageReferences = (
 				6A2967B629816CCB005F25F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6A107ADE298D100000056C16 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 6A7D7B3029814C6100DC8307 /* Products */;
 			projectDirPath = "";
@@ -192,7 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7D7B3529814C6100DC8307 /* ContentView.swift in Sources */,
+				6AA694382988869300A661A7 /* CCACard.swift in Sources */,
 				6A7D7B3329814C6100DC8307 /* CCAttendanceApp.swift in Sources */,
+				6A107ADB298CFB8A00056C16 /* ScrollingStackModifier.swift in Sources */,
+				6A107ADD298D0EA300056C16 /* QRScannerView.swift in Sources */,
 				6A9B794F2986BDC9002F76F3 /* CCAView.swift in Sources */,
 				6A2967D229816CE3005F25F6 /* Authentication.swift in Sources */,
 			);
@@ -327,6 +351,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = CCAttendance;
+				INFOPLIST_KEY_NSCameraUsageDescription = "CCAttendance needs to use the camera to scan Attendance Codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +382,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = CCAttendance;
+				INFOPLIST_KEY_NSCameraUsageDescription = "CCAttendance needs to use the camera to scan Attendance Codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -399,6 +425,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6A107ADE298D100000056C16 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		6A2967B629816CCB005F25F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -410,6 +444,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6A107ADF298D100000056C16 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A107ADE298D100000056C16 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		6A2967B729816CCB005F25F6 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6A2967B629816CCB005F25F6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
